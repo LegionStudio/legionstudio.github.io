@@ -16,3 +16,8 @@ window.scrollY > 50
 ? "rgba(0,0,0,0.9)"
 : "rgba(0,0,0,0.5)";
 });
+
+window.addEventListener("scroll",()=>{
+document.querySelector(".hero").style.backgroundPositionY =
+window.scrollY * 0.5 + "px";
+});
