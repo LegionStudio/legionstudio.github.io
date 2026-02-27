@@ -99,3 +99,23 @@ background:rgba(0,0,0,0.55);
 position:relative;
 z-index:2;
 }
+
+.showcase{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+padding:100px 40px;
+flex-wrap:wrap;
+}
+
+.showcase-text{
+max-width:500px;
+}
+
+.showcase-image img{
+width:500px;
+max-width:90%;
+border-radius:12px;
+box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
