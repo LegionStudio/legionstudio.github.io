@@ -3,57 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Legión Studio</title>
 
-<style>
-body{
-margin:0;
-font-family:Arial, sans-serif;
-background:#0b0b14;
-color:white;
-text-align:center;
-}
-
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-}
-
-h1{
-font-size:3em;
-margin:0;
-}
-
-p{
-opacity:0.8;
-}
-
-button{
-padding:15px 30px;
-margin:10px;
-border:none;
-background:#4cc9f0;
-color:black;
-font-size:1em;
-cursor:pointer;
-border-radius:8px;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="hero">
+<nav>
+<a href="#">Home</a>
+<a href="#about">Studio</a>
+<a href="#games">Games</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
 <h1>Legión Studio</h1>
 <p>Forging Worlds Beyond Reality</p>
+<a class="button" href="games/ecos-de-almia.html">
+Discover Ecos de Almia
+</a>
+</section>
 
-<button>Ecos de Almia</button>
-<button>Join Community</button>
-</div>
+<section id="about" class="section">
+<h2>About Legión Studio</h2>
+<p>
+Independent game development studio focused on tactical RPGs
+and evolving fantasy worlds.
+</p>
+</section>
+
+<section id="games" class="section">
+<h2>Our Games</h2>
+
+<h3>Ecos de Almia</h3>
+<p>Tactical Gacha RPG currently in development.</p>
+
+<a class="button" href="games/ecos-de-almia.html">
+View Game
+</a>
+</section>
+
+<section id="contact" class="section">
+<h2>Join the Journey</h2>
+<p>Follow development and become part of our community.</p>
+<a class="button">Discord</a>
+</section>
 
 </body>
 </html>
