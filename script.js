@@ -28,3 +28,21 @@ document.getElementById("loader")
 .classList.add("fade-out");
 },1500);
 });
+
+document.body.classList.add("loaded");
+
+document.querySelectorAll("a").forEach(link=>{
+link.addEventListener("click",function(e){
+
+const target = this.href;
+
+if(target && !target.includes("#")){
+e.preventDefault();
+document.body.style.opacity="0";
+
+setTimeout(()=>{
+window.location=target;
+},500);
+}
+});
+});
