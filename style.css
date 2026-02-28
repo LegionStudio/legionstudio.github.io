@@ -119,3 +119,27 @@ max-width:90%;
 border-radius:12px;
 box-shadow:0 20px 40px rgba(0,0,0,0.6);
 }
+
+.card-container{
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.card{
+width:180px;
+height:260px;
+background:#111;
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+transition:0.4s;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 20px 30px rgba(0,0,0,0.7);
+}
