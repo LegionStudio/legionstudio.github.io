@@ -21,3 +21,10 @@ window.addEventListener("scroll",()=>{
 document.querySelector(".hero").style.backgroundPositionY =
 window.scrollY * 0.5 + "px";
 });
+
+window.addEventListener("load",()=>{
+setTimeout(()=>{
+document.getElementById("loader")
+.classList.add("fade-out");
+},1500);
+});
